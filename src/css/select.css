@@ -1,0 +1,27 @@
+
+.select
+{
+    border-color: #8f80e4;
+    background-color: white;
+    height: auto;
+    min-width: 15rem;
+    padding: 0.6em 0.6em;
+    padding-left: 1em;
+    outline: none;
+    
+}
+
+.select:focus {
+    box-shadow: 0px 0px 6px #9e90ec !important;
+    border: #8f80e4 1px solid !important;
+}
+
+.option {
+    font-size: 1rem;
+    background-color: #ccdbf1;
+}
+
+.option:active{
+    font-size: 1rem;
+    background-color: #73ec44; 
+}

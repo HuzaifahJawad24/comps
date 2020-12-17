@@ -1,0 +1,70 @@
+body{
+    margin-top:20px;
+    background-color:#e9ebee;
+}
+.comment-block {
+    margin-bottom: 50px !important;
+    padding: 50px 50px;
+}
+.comments-title {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 15px;
+}
+.img-comment {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-bottom: 15px;
+}
+.ava-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.comment-content {
+    margin-left: 80px;
+}
+.comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+.comment-name {
+    font-size: 13px;
+}
+.comment-time {
+    font-size: 11px;
+    color: #b4b7c1;
+    text-align: right;
+}
+.comment-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #7a8192;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #edeff2;
+    padding: 15px 20px 20px 20px;
+    border-radius: 50px;
+}
+.comment{
+    padding: 15px 15px 30px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

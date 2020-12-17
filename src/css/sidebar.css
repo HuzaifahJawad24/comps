@@ -1,0 +1,162 @@
+.main-sidebar
+{
+    width: 250px;
+    min-height: 100vh;
+    max-height: 100%;
+    align-items: unset;
+    grid-area: sidebar;
+    background-color: var(--primary-theme);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: #fff;
+    transition: width 0.3s ease-out 0s;
+    z-index: 9999;
+}
+
+.main-sidebar .root {
+    padding: 0;
+    padding-left: 20px;
+}
+
+.main-sidebar .root-min {
+    padding: 0;
+}
+
+.main-sidebar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-sidebar ul {
+    width: 100%;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.main-sidebar li {
+    width: 100%;
+}
+
+.main-sidebar .list-item {
+    width: 100%;
+    padding: 13px 0;
+    transition: all .1s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.main-sidebar .list-item:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.main-sidebar .list-item-active {
+    width: 100%;
+    padding: 13px 0;
+    display: inline-block;
+    font-weight: 700;
+    transform: scale(1.05);
+    cursor: default;
+    text-shadow: 0 0 10px rgb(255, 255, 255),  0 0 15px rgb(255, 255, 255);
+}
+
+
+.main-sidebar .list-drop-down-arrow {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.1s linear 0s;
+}
+
+.main-sidebar .list-drop-down-arrow-active {
+    transform: rotate(90deg);
+    transition: transform 0.1s linear 0s;
+}
+
+.node-enter {
+    max-height: 0;
+    overflow: hidden;
+}
+  
+.node-enter-active {
+    max-height: 100vh;
+    transition: max-height 0.1s ease-in;
+}
+
+.node-leave {
+    max-height: 100vh;
+}
+
+.node-leave-active {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+
+.main-sidebar .logo {
+    padding: 20px 0 40px;
+    align-self: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ 
+.minimized {
+    width: 50px;
+    padding-left: 0;
+    align-items: center;
+    transition: width 0.1s linear 0s;
+}
+
+.list-item-relative {
+    position: relative;
+}
+
+.navdropdown-enter {
+    transform: scale(0);
+    transform-origin: top left;
+    
+}
+  
+.navdropdown-enter-active {
+    transform: scale(1);
+    transition: transform 0.1s ease-in 0s;
+}
+
+.navdropdown-leave {
+    transform: scale(1);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+
+.navdropdown-leave-active {
+    transform: scale(0);
+    transition: transform 0.2s ease-out;
+}
+
+.sidebar-dropdown {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    left: 150%;
+    top: 10%;
+    background-color: var(--primary-theme);
+    padding: 10px 15px;
+    width: max-content;
+    border: 0;
+    box-shadow: 2px 2px 3px #012a939e;
+    transition: height 4s linear, width 4s linear, transform 0.04s ease-in 0s; 
+}
+
+.sidebar-dropdown:focus {
+    outline: none;
+}
+
+.sidebar-dropdown-root {
+    padding-left: 0 !important;
+    margin: 0;
+}

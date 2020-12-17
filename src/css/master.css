@@ -1,0 +1,9 @@
+.master-container {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        "sidebar topbar"
+        "sidebar content";
+    grid-gap: 2px;
+}
