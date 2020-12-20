@@ -13,7 +13,7 @@ const RuleConfig = ({onAdd, onRemove, id}) => {
     }
 
     return (
-        <Container key={id} className="pb-2 mb-3" style={{border: '1px solid #AAAAAA'}}>
+        <Container fluid className="pb-2 mb-3" style={{border: '1px solid #AAAAAA'}}>
             <Row className="mt-3" style={{
                 display: "flex",
                 justifyContent: "flex-end",

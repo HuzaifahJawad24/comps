@@ -16,11 +16,11 @@ const RuleConfigurations = () => {
 
     return (
         <div>
-            <RuleConfig onAdd={onAdd} id={first.id}/>
+            <RuleConfig key={first.id} onAdd={onAdd} id={first.id}/>
             {rest.map((e) =>
-                <RuleConfig onRemove={onRemove} id={e.id}/>
+                <RuleConfig key={e.id} onRemove={onRemove} id={e.id}/>
             )}
-            <button className="btn btn-primary btn-sm pull-right mr-5">Save</button>
+            <button className="btn btn-primary btn-sm pull-right">Save</button>
         </div>
     );
 }
