@@ -3,6 +3,7 @@ import Select from "../components/select";
 import TextArea from "../components/textarea";
 import ToggleSwitch from "../components/toggleswitch";
 import CommentSection from "../components/commentsection";
+import RuleConfigurations from "../components/RuleConfigurations";
 
 
 const RuleRequest = () => {
@@ -25,11 +26,11 @@ const RuleRequest = () => {
                 </div>
                 <div class="col">
                     <Select
-                        id = "RequestStatus" 
-                        label = "Request Status" 
-                        selectclass = "form-control custom-select" 
-                        holderclass = "form-group" 
-                        values= 
+                        id = "RequestStatus"
+                        label = "Request Status"
+                        selectclass = "form-control custom-select"
+                        holderclass = "form-group"
+                        values=
                         {[
                             { text: 'Select' },
                             { text: 'Dummy1' },
@@ -41,11 +42,11 @@ const RuleRequest = () => {
             <div class="row">
                 <div class="col">
                     <Select
-                        id = "Priority" 
-                        label = "Priority" 
-                        selectclass = "form-control custom-select" 
-                        holderclass = "form-group" 
-                        values= 
+                        id = "Priority"
+                        label = "Priority"
+                        selectclass = "form-control custom-select"
+                        holderclass = "form-group"
+                        values=
                         {[
                             { text: 'Select' },
                             { text: 'Dummy1' },
@@ -55,11 +56,11 @@ const RuleRequest = () => {
                 </div>
                 <div class="col">
                     <Select
-                        id = "AssignedTo" 
-                        label = "Assigned To" 
-                        selectclass = "form-control custom-select" 
-                        holderclass = "form-group" 
-                        values= 
+                        id = "AssignedTo"
+                        label = "Assigned To"
+                        selectclass = "form-control custom-select"
+                        holderclass = "form-group"
+                        values=
                         {[
                             { text: 'Select' },
                             { text: 'Dummy1' },
@@ -69,11 +70,11 @@ const RuleRequest = () => {
                 </div>
                 <div class="col">
                     <Select
-                        id = "AssignedBy" 
-                        label = "Assigned By" 
-                        selectclass = "form-control custom-select" 
-                        holderclass = "form-group" 
-                        values= 
+                        id = "AssignedBy"
+                        label = "Assigned By"
+                        selectclass = "form-control custom-select"
+                        holderclass = "form-group"
+                        values=
                         {[
                             { text: 'Select' },
                             { text: 'Dummy1' },
@@ -92,7 +93,7 @@ const RuleRequest = () => {
             </div>
             <div class="row">
                 <div class="col">
-                    <ToggleSwitch 
+                    <ToggleSwitch
                         id = "ClientSpecific"
                         label = "Client Specific"
                         inputclass = "custom-control-input"
@@ -101,7 +102,7 @@ const RuleRequest = () => {
                     />
                 </div>
                 <div class="col">
-                    <ToggleSwitch 
+                    <ToggleSwitch
                         id = "RCMSpecific"
                         label = "RCM Specific"
                         inputclass = "custom-control-input"
@@ -110,7 +111,7 @@ const RuleRequest = () => {
                     />
                 </div>
                 <div class="col">
-                    <ToggleSwitch 
+                    <ToggleSwitch
                         id = "PayerSpecific"
                         label = "Payer Specific"
                         inputclass = "custom-control-input"
@@ -119,7 +120,7 @@ const RuleRequest = () => {
                     />
                 </div>
                 <div class="col">
-                    <ToggleSwitch 
+                    <ToggleSwitch
                         id = "Status"
                         label = "Status"
                         inputclass = "custom-control-input"
@@ -149,11 +150,11 @@ const RuleRequest = () => {
             <div class="row">
                 <div class="col">
                     <Select
-                        id = "ActionMethod" 
-                        label = "Action Method" 
-                        selectclass = "form-control" 
-                        holderclass = "form-group" 
-                        values= 
+                        id = "ActionMethod"
+                        label = "Action Method"
+                        selectclass = "form-control"
+                        holderclass = "form-group"
+                        values=
                         {[
                             { text: 'Select' },
                             { text: 'Dummy1' },
@@ -161,20 +162,21 @@ const RuleRequest = () => {
                         ]}
                     />
                 </div>
-            </div> 
+            </div>
             <div class="row">
                 <CommentSection
-                    comments = 
+                    comments =
                     {[
                         { id: 1, avatar: '/images/avatar1.png', name: 'Person 1', comment: "First Comment", time:'1May 27, 2015 at 3:14am'},
                         { id: 2, avatar: '/images/avatar2.png', name: 'Person 2', comment: "Second Comment",time:'1May 27, 2015 at 3:14am'},
                         { id: 3, avatar: '/images/avatar3.png', name: 'Person 3', comment: "Third Comment",time:'1May 27, 2015 at 3:14am'}
                     ]}
                 />
-            </div> 
+            </div>
+            <RuleConfigurations/>
         </form>
     );
-    
+
 }
 
 export default RuleRequest
