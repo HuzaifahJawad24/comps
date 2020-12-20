@@ -3,6 +3,7 @@ import Select from "../components/select";
 import TextArea from "../components/textarea";
 import ToggleSwitch from "../components/toggleswitch";
 import CommentSection from "../components/commentsection";
+import RuleConfigurations from "../components/RuleConfigurations";
 
 
 const RuleRequest = () => {
@@ -172,6 +173,7 @@ const RuleRequest = () => {
                     ]}
                 />
             </div> 
+            <RuleConfigurations/>
         </form>
     );
     

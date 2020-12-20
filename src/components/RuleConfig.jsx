@@ -1,18 +1,25 @@
 import React from "react";
-import {Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Select from "./select";
 import TextField from "./textfield";
 import PlusCircleIcon from "../icons/plus-circle.svg";
+import MinusCircleIcon from "../icons/minus-circle.svg";
 
-const BoxForm = () => {
+const RuleConfig = ({ onAdd, onRemove}) => {
+
+    const populateAddOrRemoveButton = () => {
+        if (onAdd) return <img src={PlusCircleIcon} alt="Add More" onClick={() => onAdd()}/>;
+        else return <img src={MinusCircleIcon} alt="Remove" onClick={() => onRemove()}/>;
+    }
+
     return (
-        <Container style={{paddingTop: '20px', paddingBottom: '10px', border: '1px solid #AAAAAA'}}>
-            <Row style={{
+        <Container className="pb-2 mb-3" style={{border: '1px solid #AAAAAA'}}>
+            <Row className="mt-3" style={{
                 display: "flex",
                 justifyContent: "flex-end",
                 marginRight: "10px"
             }}>
-                <img src={PlusCircleIcon} alt="Add More" onClick={()=> console.log('add element')} />
+                {populateAddOrRemoveButton()}
             </Row>
             <Row>
                 <Col><Select
@@ -60,4 +67,4 @@ const BoxForm = () => {
     );
 }
 
-export default BoxForm;
+export default RuleConfig;
