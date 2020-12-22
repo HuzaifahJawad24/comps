@@ -47,6 +47,7 @@ const RuleConfig = ({onRemove, id}) => {
                     id="Workflow"
                     label="Workflow"
                     selectclass="form-control custom-select"
+                    holderclass="form-group"
                     values=
                         {[
                             {text: 'Select'},
@@ -54,8 +55,30 @@ const RuleConfig = ({onRemove, id}) => {
                             {text: 'Dummy2'}
                         ]}
                 /></Col>
-                <Col><TextField type="text" label="Module" name="module"/></Col>
-                <Col><TextField type="text" label="User Type" name="userType"/></Col>
+                <Col><Select
+                    id="Module"
+                    label="Module"
+                    selectclass="form-control custom-select"
+                    holderclass="form-group"
+                    values=
+                        {[
+                            {text: 'Select'},
+                            {text: 'Dummy1'},
+                            {text: 'Dummy2'}
+                        ]}
+                /></Col>
+                <Col><Select
+                    id="UserType"
+                    label="User Type"
+                    selectclass="form-control custom-select"
+                    holderclass="form-group"
+                    values=
+                        {[
+                            {text: 'Select'},
+                            {text: 'Dummy1'},
+                            {text: 'Dummy2'}
+                        ]}
+                /></Col>
                 <Col><TextField type="text" label="Error Severity" name="errorSeverity"/></Col>
             </Row>
         </Container>
