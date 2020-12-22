@@ -2,15 +2,9 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Select from "./select";
 import TextField from "./textfield";
-import PlusCircleIcon from "../icons/plus-circle.svg";
 import MinusCircleIcon from "../icons/minus-circle.svg";
 
-const RuleConfig = ({onAdd, onRemove, id}) => {
-
-    const populateAddOrRemoveButton = () => {
-        if (onAdd) return <img src={PlusCircleIcon} alt="Add More" onClick={() => onAdd()}/>;
-        else return <img src={MinusCircleIcon} alt="Remove" onClick={() => onRemove(id)}/>;
-    }
+const RuleConfig = ({onRemove, id}) => {
 
     return (
         <Container fluid className="pb-2 mb-3" style={{border: '1px solid #AAAAAA'}}>
@@ -19,7 +13,8 @@ const RuleConfig = ({onAdd, onRemove, id}) => {
                 justifyContent: "flex-end",
                 marginRight: "10px"
             }}>
-                {populateAddOrRemoveButton()}
+                {<img src={MinusCircleIcon} style={{visibility: onRemove ? "visible" : "hidden"}} alt="Remove"
+                      onClick={() => onRemove(id)}/>}
             </Row>
             <Row>
                 <Col><Select
