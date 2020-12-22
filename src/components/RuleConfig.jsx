@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Select from "./select";
-import TextField from "./textfield";
+import TextField from "./TextField";
 import MinusCircleIcon from "../icons/minus-circle.svg";
 
 const RuleConfig = ({onRemove, id}) => {
