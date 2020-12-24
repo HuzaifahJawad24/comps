@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import TextField from "../components/textfield";
-import Checkbox from "../components/checkbox";
+import Checkbox from "../components/Checkbox";
 import logo from "../logo.svg";
 import UserIcon from "../icons/user-solid.svg";
 import EyeIcon from "../icons/eye-solid.svg";
@@ -55,7 +55,7 @@ const Login = props => {
                     <TextField type ={form2.show_password ? "text" : "password"} label="Password" placeholder="Enter Password" name="password" value={form.password} onChange={updateFormField}>
                         <img src={form2.show_password ? EyeIcon : EyeSlashIcon} className="input-icon eye-icon" alt="" onClick={togglePasswordVisiblity} />
                     </TextField> 
-                    <Checkbox labelClass="login-label" label="Remember me" name="remember_me" checked={form.remember_me} onChange={updateFormField} />
+                    <Checkbox labelClass="login-label" label="Remember me" name="remember_me" checked={form.remember_me} handleOnChange={updateFormField} />
                     <button type="login" className={"btn btn-primary btn-login " + ((form.email !== '' && form.password !== '') ? '' : 'disabled')} disabled={(form.email !== '' && form.password !== '') ? false : true}>LogIn</button>
                     <p className="forgot-password text-right">
                         Forgot <a href="/#">password?</a>
